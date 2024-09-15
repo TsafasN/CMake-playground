@@ -31,3 +31,8 @@ configure_package_config_file(
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/mylibConfig.cmake
         DESTINATION lib/cmake/mylib
 )
+
+set(CPACK_GENERATOR "DEB")
+set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "My Library")
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "ntsafas")
+include(CPack)
