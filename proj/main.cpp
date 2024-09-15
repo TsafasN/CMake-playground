@@ -1,7 +1,7 @@
-#include "../depend/mylib.h"
+#include <mylib.h>
 
 int main()
 {
-	int c = mysum(1,2);
-	return 0;
+	int c = ml::mysum(1,2);
+	return c;
 }
